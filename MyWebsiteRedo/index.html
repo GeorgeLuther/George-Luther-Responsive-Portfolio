@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- I've been told that well written code should be semantic and efficient
+therefore comments are rare and only for particularly complex or unusual situations, 
+section seperation, note taking, or psuedo-code during development. -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <title>George Luther</title>
+    <meta name="Description" content="George Luther offers professional services in software engineering, web development, music, and audio!">
+        
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"  type="text/css" rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/6cb83674ce.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.ico"/>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  
+  <body>
+      <header>
+          <h1>George Luther</h1>
+          <a class="logo" href="index.html"><img src="images/logo.png" width="110" alt="George Luther"/></a>
+          <!-- In a future version I might use an (animated?) SVG logo that is added to the DOM via JS when the SVG is accessible.
+          This way SEO is properly achieved via use of an H1 with standard text 
+          and if the image isn't working the page will still look decent.  -->
+          
+          <nav>
+            <ul class= "page_links"> <!-- I have considered using a <map> to combine the text and dashes instead of two <ul>s -->
+                <li><a href="code.html">CODE</a></li>
+                <li><a href="audio.html">AUDIO</a></li>     
+            </ul>
+            <ul class= "page_dashes">
+                <li><a href="code.html"><img src="left-dash.jpg" width=""/></a></li>
+                <li><a href="code.html"><img src="right-dash.jpg" width=""/></a></li>     
+            </ul>
+            
+            <ul class= "social_links" style="font-size: 18px;">
+                <a href="https://www.linkedin.com/in/georgeluther/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/GeorgeLuther"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.instagram.com/georgeluther/?hl=en"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCsNW38Yjrw3uQx3UWXHS0_w/about?view_as=subscriber"><i class="fab fa-youtube-square"></i></a>
+                <div class="dropdown">
+                    <button class="dropbtn" style="font-size: 18px;">
+                        <i class="fas fa-address-book"></i>
+                    </button>
+                    <div class="dropdown-content" style="font-size: 14px;">
+                        <a href="sms://+14035550185?body=I%saw%20your%website..."><i class="fas fa-comment-dots"></i></a>
+                        <a href="mailto:george.e.luther@gmail.com"><i class="fas fa-paper-plane"></i></a>
+                        <a href="tel:1-860-559-6235"><i class="fas fa-phone"></i></a>
+                        <a href="#adress"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </ul>
+          </nav>
+      </header>
+      
+      <main>
+        <ol id="anchor_links">
+            <li><a href="#greeting">◈</a></li>
+            <li><a href="#about_me">◈</a></li>
+            <li><a href="#services">◈</a></li>
+            <li><a href="#experiences">◈</a></li>
+            <li><a href="#current_projects">◈</a></li>
+            <li><a href="#contact_form">◈</a></li>
+            <li><a href="#map">◈</a></li>
+        </ol>
+          <!-- The terminology used to describe articles/sections suggest using this semantic format. 
+          Though I'm not sure, since these parts are not particularly independent. -->
+        <article id="greeting">
+            <p>
+                <span style="font-size:28px;">LET'S MAKE SOMETHING TOGETHER!</span>
+                <span style="font-size:16px;">Hi! I'm George, a software developer in the Hartford, CT area with a background in music and audio.
+                I'm always in search ways to make things more usable, adaptable, and efficient.
+                The thing that drives me is finding where beauty meets structure. </span>
+            </p>
+        </article>
+
+        <article id="about_me">
+            <h2>ABOUT ME</h2>
+            <div class="midground">
+                <img src="#portrait" width="" alt="a photo of George"/>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse deserunt? Illum non, placeat praesentium odit tempore dignissimos culpa amet atque est laboriosam rerum aperiam ut quaerat obcaecati cum porro.</p>
+            </div>
+        </article>
+
+        <article id="services">
+            <h2>SERVICES</h2>
+            <div class="midground">
+                <section class="side">
+                    <h3>CODE</h3>
+                    <p>As a fullstack developer I am a versatile teammate and I love to work in groups of any size. 
+                        I offer freelance services for one-off projects or when you like to keep your team small. 
+                        Visit the CODE page for more comprehensive information.</p>
+                    <ui>
+                        <li>website building</li>
+                        <li>web app development</li>
+                        <li>database services</li>
+                        <li>server management</li>
+                        <li>generative and stochastic systems</li>
+                        <li>digital signal processing</li>
+                        <li>machine learning and neural nets</li>
+                    </ui>
+                </section>
+                <section class="side">
+                    <h3>AUDIO</h3>
+                    <p>In my small music studio I am always creating. 
+                        If you need music or audio created, notated, or improved I can help. 
+                        Visit the AUDIO page for more comprehensive information.</p>
+                    <ui>
+                        <li>original music</li>
+                        <li>arrangements</li>
+                        <li>transcription</li>
+                        <li>professional performance and recordings:
+                            <br> keyboards, guitar, electronics, and vocals</li>
+                        <li>mixing</li>
+                        <li>sound effects</li>
+                        <li>lessons</li>
+                    </ui>
+                </section>
+            </div>
+        </article>
+        
+        <article id="experiences">
+            <h2>EXPERIENCES</h2>
+            <div class="midground">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse deserunt? Illum non, placeat praesentium odit tempore dignissimos culpa amet atque est laboriosam rerum aperiam ut quaerat obcaecati cum porro.</p>
+            </div>
+        </article>
+
+        <article id="current_projects">
+            <h2>CURRENT PROJECTS</h2>
+            <div class="midground">
+                <ul>
+                    <li><a href="https://rhythmodulum.netlify.app/">rhythmodulum</a></li>
+                    <p>A web app for generating and manipulating rhyhtmic patterns. Soon: MIDI Clock/Transport control, MIDI IN/OUT, and custom sample kits.</p>
+                    <li><a href="https://github.com/GeorgeLuther/choralator">choralator</a></li>
+                    <p>A web app that generates music with up to four voices by concatenating randomly generated motifs into larger musical forms. Currently available as an Ableton Live 'M4L' device.</p>
+                    <li><a href="https://www.youtube.com/watch?v=EWrygtUhy7U&t=0m4s">racquetSong</a></li>
+                    <p>A virtual space in Unity for improvising music through controlled randomness and the physicality of raquetball. Made in collaboration with Sean Nealon.</p>
+                </ul>
+            </div>
+        </article>
+
+        <article id="contact_form">
+            <h2>CONTACT ME</h2>
+            <div class="midground">
+                <form class="contact_form">
+                    <div class="row">
+                        <div>
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class=>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-custom btn-lg">Send</button>
+                </form>
+            </div>
+        </article>
+
+        <article id="map">
+            <div class="midground">
+                <p>I live in the Hartford, CT area. While I love long drives, I love working remotely even more so. In these modern times, remote solutions expand your network and allow us to access amazing resources and ideas! Don't let our locations deter you from contacting me!</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53910.30157660887!2d-72.71799554988837!3d41.765974686852516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e65311f21151a5%3A0xcc8e4aa8e97d5999!2sHartford%2C%20CT!5e0!3m2!1sen!2sus!4v1602200949754!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </article>
+      </main>
+
+      <footer>
+        <hr>
+        <p>© 2020 George Luther. All rights reserved.</p>
+        <hr>
+      </footer>
+      <!-- I would like to add an animated SVG loading screen with a pattern or "print" of music and code related images.
+      ??? (pianos, keyboards, functions, guitars, waves) ???
+      I imagine this will require an asycnronous callback -->
+      <script src="#script.js"></script>
+  </body>
+</html>

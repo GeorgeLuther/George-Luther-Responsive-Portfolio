@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    list-style-type:none;
+}
+body {
+    background-image: url("images/lavender.jpg");
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+}
+
+header {
+    font-size: 22px;
+    background-color: rgb(182, 142, 126);
+    background-image: url("images/dashboard.jpg");
+    background-size: 100%;
+    position: fixed;
+    width: 100%;
+    box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
+}
+.navbar {
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 16px;
+}
+.title {
+  clear: both;
+  z-index: -1;
+  float: left;
+  margin: 6px;
+}
+.pages, .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar li a, .social a {
+    color: black;
+    text-decoration: none;
+    padding-left: 16px;
+    align-items: center;
+}
+.social a {
+padding-top: 14px;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding-left: 16px;
+    padding-top: 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: rgb(224, 159, 55);
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a37c5c;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 4px;
+    padding-top: 10px;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  .dropdown-content a:hover {
+    background-color: rgb(224, 159, 55);;
+    color: black;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+}
+h2, section h3, section p, section ul {
+    text-align: center;
+    width: 100%;    
+} 
+h2 {
+    color:#1f1b18;
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+section h3, section p, section ul, .greeting h2 {
+    background-color: rgb(255, 255, 255);
+    background-image: url("images/cream-texture.jpg");
+    color: #1f1b18;
+}
+.greeting p {
+    margin-top: 100px;
+}
+.services {
+  flex-direction: row;
+}
