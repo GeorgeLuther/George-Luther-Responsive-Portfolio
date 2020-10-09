@@ -95,6 +95,10 @@ section {
     display: flex;
     flex-direction: column;
     overflow: visible;
+    box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
+    background-color: rgb(255, 255, 255);
+    background-image: url("images/cream-texture.jpg");
+    color: #1f1b18;
 }
 h2, section h3, section p, section ul {
     text-align: center;
@@ -105,11 +109,6 @@ h2 {
     display: flex;
     justify-content: center;
     margin-top: 28px;
-}
-section h3, section p, section ul, .greeting h2 {
-    background-color: rgb(255, 255, 255);
-    background-image: url("images/cream-texture.jpg");
-    color: #1f1b18;
 }
 .greeting p {
     margin-top: 100px;
